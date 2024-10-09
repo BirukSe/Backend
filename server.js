@@ -10,10 +10,10 @@ const port = 4000;
 
 // Database connection
 const db = new pg.Client({
-    user: process.env.DB_USER || "birukee",
+    user: "birukee",
     host: "localhost",
-    database: process.env.DB_NAME || "Blog",
-    password: process.env.DB_PASSWORD || "new_password",
+    database: "Blog",
+    password: "new_password",
     port: 5432,
 });
 
